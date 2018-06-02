@@ -7,6 +7,8 @@ def identity(x):
     return x
 
 
-def compose(f1, f2):
+def compose(f1, f2, **args):
     """ Composing functions f1 and f2. """
-    return f2(f1())
+    def composed(**args):
+        return f2(f1(**args))
+    return composed
