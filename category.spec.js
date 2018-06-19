@@ -1,5 +1,6 @@
-const compose = require("./category").compose;
-const identity = require("./category").identity;
+const category = require("./category");
+const compose = category.compose;
+const identity = category.identity;
 
 describe("compose", () => {
   it("composes basic functions", () => {
