@@ -4,7 +4,13 @@ const identity = category.identity;
 
 describe("compose", () => {
   it("composes basic functions", () => {
-    expect(compose(() => 1, x => x + 2)).toBe(3);
+    const f = () => 1;
+    const g = x => x + 2;
+    let x = compose(
+      f,
+      g
+    );
+    expect(x).toBe(3);
   });
 });
 
