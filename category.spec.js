@@ -18,4 +18,10 @@ describe("identity", () => {
   it("returns the identity of the input", () => {
     expect(identity(123)).toBe(123);
   });
+  it("is dynamic on type", () => {
+    const tests = ["a", "ABC", 0x42, 54, { hello: "world" }];
+    for (const t of tests) {
+      expect(identity(t)).toBe(t);
+    }
+  });
 });
