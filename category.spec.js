@@ -6,10 +6,7 @@ describe("compose", () => {
   it("composes basic functions", () => {
     const f = () => 1;
     const g = x => x + 2;
-    let x = compose(
-      f,
-      g
-    );
+    let x = compose(f, g);
     expect(x).toBe(3);
   });
 });
