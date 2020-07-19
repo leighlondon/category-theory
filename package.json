@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^25.5.4"
   },
   "scripts": {
     "lint": "prettier --write '*.js' '*.json'",
